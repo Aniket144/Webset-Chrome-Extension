@@ -1,0 +1,79 @@
+<!doctype html>
+<HTML>
+  <HEAD>
+    <title> Websets </title>
+    <style>
+      body {
+          font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+          font-size: 100%;
+          min-width:400px;
+          border-collapse: collapse;
+          padding: 5px;
+          background-color: #c9ee59;
+        }
+        #new_webset{
+          height: 5px;
+          margin-bottom: 40px;
+        }
+        #part1{
+          text-align: left;
+        }
+        .topButton{
+          margin-left: 20px;
+        }
+        textarea {
+          height: 0px;
+          width: 100%;
+        }
+        #result {
+            font-size: small;
+        }
+        #result .error {
+            color: red;
+        }
+        #result .success {
+            color: green;
+        }
+        .button2{
+          width: 20%;
+          background-color: #ffffe0;
+          float: right;
+          border: 1px solid green;
+        }
+        .button2:hover{
+          background-color: #73d016;
+        }
+        .list{
+          line-height: 1.8em;
+        }
+        .list:hover{
+          box-shadow: inset 0 0 0 750px rgba(0,0,0,.2);
+        }
+        .topButton{
+          background-color: #ffffe0;
+          width: 90px;
+        }
+      </style>
+    <script type="text/javascript" src="popup.js"></script>
+  </HEAD>
+  <BODY>
+
+    <div id="part1">
+      <h3 style="display: inline-block;margin-top:-10px">Websets</h3>
+      <button id="addButton" class="topButton" style="display:inline;float:right;height:2.0em;">+ WebSet</button>
+    </div>
+
+    <ul id="websets" style="margin-top:-3px;">
+    </ul>
+
+    <div id="new_webset">
+      <hr>
+      <input id="websetName" type="text" name="firstname" value="" placeholder="Enter Name" style="visibility:hidden;width:70%;">
+      <button id="saveButton" class="button2" style="visibility:hidden"> Save </button>
+      <br>
+      <textarea id="url-list" style="visibility:hidden;margin-top:5px;">
+      </textarea>
+      <br>
+    </div>
+  </BODY>
+</HTML>
